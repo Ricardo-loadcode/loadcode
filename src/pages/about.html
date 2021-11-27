@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/fadeIn.css">
+    <link rel="shortcut icon" href="../../public/favicon.ico" type="image/png">
+    <script src="../scripts/globalScript.js" defer></script>
+    <title>Sobre - LoadCode</title>
+</head>
+<body>
+    <div class="fadeIn"></div>
+    <header>
+        <div class="logo">
+            <img id="hide" src="../assets/images/logo.png" alt="LoadCode">
+            <img id="show" src="../assets/images/logov2.png" alt="LoadCode">
+        </div>
+        <div class="menu-section">
+            <nav>
+                <ul>
+                    <li><h4><a href="../../index.html" onclick="viewMenu()">Home</a></h4></li>
+                    <li><h4><a href="#" onclick="viewMenu()">Sobre</a></h4></li><!--outra página-->
+                    <li><h4><a href="../../index.html" onclick="viewMenu()">Serviços</a></h4></li><!--mesma página rolar-->
+                    <li><h4><a href="../pages/contact.html" onclick="viewMenu()">Contato</a></h4></li><!--outra página-->
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="viewMenu()">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <figure>
+            <img src="../assets/images/about.webp" alt="banner">
+        </figure>
+    </section>
+    <main>
+        <section>
+            <div class="content">
+                <div class="image" data-anime="left">
+                    <img src="../assets/images/note.webp" alt="about">
+                </div>
+                <div class="about">
+                    <div class="topic missao">
+                        <div class="thumb" data-anime="left">
+                            <img src="../assets/images/missao.png" alt="missao">
+                        </div>
+                        <div class="description">
+                            <h3 data-anime="right">Missão</h3>
+                            <p data-anime="left">
+                                Atender as necessidades do mercado atual desenvolvendo softwares com tecnologia de ponta objetivando
+                                o crescimento por meio de soluções criativas e inovadoras
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="topic visao">
+                        <div class="thumb" data-anime="right">
+                            <img src="../assets/images/visao.png" alt="missao">
+                        </div>
+                        <div class="description">
+                            <h3 data-anime="left">Visão</h3>
+                            <p data-anime="right">
+                                Ser referência no desenvolvimento de software para o mercado
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="topic valores">
+                        <div class="thumb" data-anime="top">
+                            <img src="../assets/images/valores.png" alt="missao">
+                        </div>
+                        <div class="description">
+                            <h3 data-anime="right">Valores</h3>
+                            <p data-anime="left">
+                                A Loadcode preza pelo respeito e confiança em todas as relações, visando sempre a satisfação de seus
+                                clientes com transparência e eficiência.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="whats">
+            <img src="../../src/assets/icons/whatsapp.png" alt="whatsapp">
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col arealogo">
+                        <div class="logo">
+                            <img src="../assets/images/logo-thumb.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="../pages/contact.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Sobre</h3>
+                        <ul>
+                            <li><a href="#">Quem</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Produtos</h3>
+                        <ul>
+                            <li><a href="../../index.html">Gestão Empresarial – ERP</a></li>
+                            <li><a href="../../index.html">Sites Profissionais e Landing pages</a></li>
+                            <li><a href="../../index.html">Apps mobile Android e IOS</a></li>
+                            <li><a href="../../index.html">Aplicativos desktop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="mailto:atendimento@loadcode.com.br">atendimento@loadcode.com.br</a></li>
+                            <li><a href="#">11 90000-0000</a></li>
+                            <li><a href="#">11 90000-0000</a></li>
+                            <li><a href="./contact.html">Formulário</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Siga-nos</h3>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Todos os direitos reservados © 2022 LoadCode</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

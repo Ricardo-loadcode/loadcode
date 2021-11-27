@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#b8a0f1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b8a0f1">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
+    <link rel="stylesheet" href="./src/styles/home.css">
+    <link rel="stylesheet" href="./src/styles/fadeIn.css">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/png">
+    <script src="./src/scripts/globalScript.js" defer></script>
+    <script src="./src/scripts/carrossel.js"></script>
+    <title>Home - LoadCode</title>
+</head>
+<body>
+    <div class="fadeIn"></div>
+    <header>
+        <div class="logo">
+            <img id="hide" src="./src/assets/images/logo.png" alt="LoadCode">
+            <img id="show" src="./src/assets/images/logov2.png" alt="LoadCode">
+        </div>
+        <div class="menu-section">
+            <nav>
+                <ul>
+                    <li><h4><a href="#" onclick="viewMenu()">Home</a></h4></li>
+                    <li><h4><a href="./src/pages/about.html" onclick="viewMenu()">Sobre</a></h4></li>
+                    <li><h4><a href="#servicos" onclick="viewMenu()">Serviços</a></h4></li>
+                    <li><h4><a href="./src/pages/contact.html" onclick="viewMenu()">Contato</a></h4></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="viewMenu()">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            </div>
+        </div>
+    </header>
+    <ul class="slider">
+        <button onclick="avancar()" class="avancar"></button>
+        <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <img src="./src/assets/images/banner01.webp" alt="">
+            <div class="textBanner" id="text01">
+                <h2 data-anime="top">Conheça a LoadCode</h2>
+                <span data-anime="right">
+                    Contribuímos para qualificar a gestão da sua empresa por meio de nossos softwares.
+                </span>
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="slide2" name="slide">
+            <img src="./src/assets/images/banner02.webp" alt="">
+            <div class="textBanner" id="text02">
+                <h2>Sistemas sob medida</h2>
+                <span>
+                    Desenvolvemos sistemas sob medida, entendendo as nuances do negócio, atendendo suas necessidades,
+                    características e preferencias.
+                </span>
+            </div>
+        </li>
+        <li>
+            <input type="radio" id="slide3" name="slide">
+            <img src="./src/assets/images/banner03.webp" alt="">
+            <div class="textBanner" id="text03">
+                <h2>Gerenciamento de seus negócios</h2>
+                <span>
+                    Com resultados em completa sinergia à estratégia do seu negócio, desenvolvemos soluções
+                    tecnológicas em sistema da informação, comunicação para sua empresa e projeto                    
+                </span>
+            </div>
+        </li>        
+        <button onclick="voltar()" class="voltar"></button>
+        <div class="dots">
+            <label for="slide1" id="dot1" onclick="active('dot1')"></label>
+            <label for="slide2" id="dot2" onclick="active('dot2')"></label>
+            <label for="slide3" id="dot3" onclick="active('dot3')"></label>
+        </div>
+    </ul>
+    <main>
+        <section id="quem" class="quem">
+            <h3 data-anime="top">Soluções tecnológicas</h3>
+            <h1 data-anime="right">Quem somos nós</h1>
+            <p data-anime="left">Somos uma startup desenvolvedora de software, atendemos variados tipos de serviços, como sistema de planejamento de 
+                recursos corporativos – ERP, sistema empresarial em geral, sites profissionais, landing pages, e apps mobile Android
+                e IOS focada na utilização de novas tecnologias de forma eficiente.
+            </p>
+            <p data-anime="top">
+                Nossos sistemas são diferenciados, pois estamos sempre nos atualizando com as últimas tecnologias mais utilizadas no 
+                mercado. A nossa equipe é formada por profissionais altamente qualificados para melhor atender seu negócio.
+            </p>
+            <p data-anime="right">
+                O nosso objetivo é oferecer a você e a sua empresa crescimento sustentado através de nossos softwares de modo criativo e inovador.
+            </p>
+        </section>
+        <section id="servicos" class="servicos">
+            <h3 data-anime="right">Serviços e produtos</h3>
+            <div class="content">
+                <div class="box-image" data-anime="right">
+                    <img src="./src/assets/images/erp-sistemas.webp" alt="erp-sistemas">
+                </div>
+                <div id="erp" class="box-text">
+                    <h4 data-anime="left">Software</h4>
+                    <h2 data-anime="top">Gestão empresarial - ERP</h2>
+                    <p data-anime="top">
+                        Desenvolvemos soluções com tecnologia avançada, que se integra aos processos de sua empresa, possibilitando análises
+                        completas, tais como reunir informações importantes das operações, transformando em elementos aproveitáveis para a
+                        condução do negócio, assegurando atualidade, profundidade e o alinhamento com as necessidades da sua corporação.
+                    </p>
+                </div>
+            </div>
+            <div class="content top">
+                <div id="sites" class="box-text">
+                    <h4 data-anime="left">Sites</h4>
+                    <h2 data-anime="top">Sites profissionais e Landing pages</h2>
+                    <p data-anime="right">
+                        Potencialize o seu marketing digital através dos nossos serviços. Todos os nossos sites são personalizados e implementados
+                        com tecnologia responsiva. Desenvolvemos landing pages personalizadas para sua empresa ou negócio. Páginas para conversões
+                        e divulgação dos seus produtos e/ou serviços e sites em geral.
+                    </p>
+                </div>
+
+                <div class="box-image" data-anime="right">
+                    <img src="./src/assets/images/site.webp" alt="sites">
+                </div>
+            </div>
+            <div class="content">
+                <div class="box-image" data-anime="right">
+                    <img src="./src/assets/images/mobile-loadcode.webp" alt="sites">
+                </div>
+                <div id="app" class="box-text">
+                    <h4 data-anime="left">Aplicativos</h4>
+                    <h2 data-anime="top">Apps mobile Android e IOS</h2>
+                    <p data-anime="right">
+                        Obtenha maior proximidade e envolvimento de seus clientes, funcionários e empresas através de nossos aplicativos mobile,
+                        com flexibilidade para smartphones Android e IOS, nossos apps permitem aos seus usuários ter uma experiência mais rápida 
+                        e intuitiva ao gerenciar os processos da sua empresa. Permita que sua marca possa ser vista diariamente pelos seus clientes
+                        todas as vezes que usarem o celular.
+                    </p>
+                </div>
+            </div>
+            <div id="desktop" class="content top">
+                <div class="box-text" data-anime="left">
+                    <h4>Aplicativos</h4>
+                    <h2>Aplicativos desktop</h2>
+                    <p>
+                        Desenvolvemos aplicações nativas para desktop com design incrivelmente moderno para ser acessado diretamente pelo seu sistema
+                        operacional. Obtenha aplicativos robustos com maior performance, estabilidade e segurança.
+                    </p>
+                </div>
+                <div class="box-image" data-anime="right">
+                    <img src="./src/assets/images/laptop-dash.webp" alt="sites">
+                </div>
+            </div>
+            <div class="content invitation">
+                <div class="box-text">
+                    <h2 data-anime="top">Você tem um plano de negócio?</h2>
+                    <h4 data-anime="left">tire do papel agora mesmo!</h4>
+                    <p data-anime="left">
+                        Temos o produto ideal para sua empresa ou o negócio, marque uma reunião
+                        comercial, solicite um orçamento e levaremos a tecnologia da sua empresa a outro nível! Entre
+                        em contato conosco:
+                    </p>
+                    <div class="contact">
+                        <div class="areaIcons">
+                            <div class="ico-email" data-anime="left">
+                                <img src="./src/assets/icons/email.png" alt="cel">
+                            </div>
+                            <div class="info" data-anime="top">
+                                <h4>E-mail</h4>
+                                <span>contato@loadcode.com.br</span>
+                            </div>
+                        </div>
+                        <div class="areaIcons">
+                            <div class="ico-cel" data-anime="right">
+                                <img src="./src/assets/icons/cel.png" alt="cel">
+                            </div>
+                            <div class="info" data-anime="top">
+                                <h4>Fone</h4>
+                                <span>(11) 90000-0000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="areaButton" data-anime="right">
+                        <div class="btnForm">Ou então pelo formulário</div>
+                    </div>
+                </div>
+                <div class="box-image" data-anime="left">
+                    <div class="card-img">
+                        <object type="image/svg+xml" data="./src/assets/svg/agreement.svg" class="vector"></object>
+                    </div>
+                </div>
+                <img id="background" src="./src/assets/images/code.jpg" alt="background">
+            </div>
+        </section>
+        <div class="whats">
+            <img src="./src/assets/icons/whatsapp.png" alt="">
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col arealogo">
+                        <div class="logo">
+                            <img src="./src/assets/images/logo-thumb.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./src/pages/about.html">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="./src/pages/contact.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Sobre</h3>
+                        <ul>
+                            <li><a href="#quem">Quem</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Produtos</h3>
+                        <ul>
+                            <li><a href="#erp">Gestão Empresarial – ERP</a></li>
+                            <li><a href="#sites">Sites Profissionais e Landing pages</a></li>
+                            <li><a href="#app">Apps mobile Android e IOS</a></li>
+                            <li><a href="#desktop">Aplicativos desktop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="mailto:atendimento@loadcode.com.br">atendimento@loadcode.com.br</a></li>
+                            <li><a href="#">11 90000-0000</a></li>
+                            <li><a href="#">11 90000-0000</a></li>
+                            <li><a href="./src/pages/contact.html">Formulário</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Siga-nos</h3>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Todos os direitos reservados © 2022 LoadCode</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

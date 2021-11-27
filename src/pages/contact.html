@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/fadeIn.css">
+    <link rel="shortcut icon" href="../../public/favicon.ico" type="image/png">
+    <script src="../scripts/globalScript.js"></script>
+    <script src="../scripts/sendEmail.js"></script>
+    <script src="../email/email.min.js"></script>
+    <title>Atendimento - LoadCode</title>
+</head>
+<body>
+    <div class="fadeIn"></div>
+    <header>
+        <div class="logo">
+            <img id="hide" src="../assets/images/logo.png" alt="LoadCode">
+            <img id="show" src="../assets/images/logov2.png" alt="LoadCode">
+        </div>
+        <div class="menu-section">
+            <nav>
+                <ul>
+                    <li><h4><a href="../../index.html" onclick="viewMenu()">Home</a></h4></li>
+                    <li><h4><a href="../pages/about.html" onclick="viewMenu()">Sobre</a></h4></li>
+                    <li><h4><a href="../../index.html" onclick="viewMenu()">Serviços</a></h4></li>
+                    <li><h4><a href="#" onclick="viewMenu()">Contato</a></h4></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="viewMenu()">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <figure>
+            <img src="../assets/images/atendimento.webp" alt="banner">
+        </figure>
+    </section>
+    <main>
+        <section class="contato">
+            <div class="description">
+                <h1>Fale Conosco</h1>
+                <p>
+                    Fale com a LoadCode! Deseja tirar alguma dúvida ou deseja fazer um orçamento, entre em contato
+                    conosco através do telefone ou e-mail, ou se preferir preencha o formulário abaixo e responderemos
+                    o mais breve possível.
+                </p>
+            </div>
+            <div class="areaForm">
+                <form>
+                    <div class="label-float">
+                        <input type="text" id="name" placeholder=" "/>
+                        <label>Seu Nome:</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="email" id="email" placeholder=" "/>
+                        <label>Seu E-mail:</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="tel" id="phone" placeholder=" "/>
+                        <label>Telefone para contato:</label>
+                    </div>
+                    <div class="label-float">
+                        <input type="text" id="company" placeholder=" "/>
+                        <label>Sua empresa ou negócio:</label>
+                    </div>
+                    <div class="label-float">
+                        <textarea name="" id="message" cols="30" rows="10"></textarea>
+                        <label>Como podemos te ajudar?</label>
+                    </div>
+                    <div class="btn" onclick="sendMail()">Enviar</div>
+                </form>
+                <div class="image-Form">
+                    <img src="../assets/images/technology.webp" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="whats">
+            <img src="../../src/assets/icons/whatsapp.png" alt="whatsapp">
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col arealogo">
+                        <div class="logo">
+                            <img src="../assets/images/logo-thumb.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Sobre</h3>
+                        <ul>
+                            <li><a href="#">Quem</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Produtos</h3>
+                        <ul>
+                            <li><a href="../../index.html">Gestão Empresarial – ERP</a></li>
+                            <li><a href="../../index.html">Sites Profissionais e Landing pages</a></li>
+                            <li><a href="../../index.html">Apps mobile Android e IOS</a></li>
+                            <li><a href="../../index.html">Aplicativos desktop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="mailto:atendimento@loadcode.com.br">atendimento@loadcode.com.br</a></li>
+                            <li><a href="#">11 90000-0000</a></li>
+                            <li><a href="#">11 90000-0000</a></li>
+                            <li><a href="#">Formulário</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Siga-nos</h3>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Todos os direitos reservados © 2022 LoadCode</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
