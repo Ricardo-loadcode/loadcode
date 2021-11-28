@@ -340,6 +340,19 @@ section .areaForm .image-Form img {
     height: auto;
 }
 
+.overlay{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000b8;
+  z-index: 1;
+  cursor: pointer;
+  display: none;
+}
 .modal {
     width: 35vw;
     height: 30vh;
@@ -350,6 +363,7 @@ section .areaForm .image-Form img {
     bottom: 0;
     left: 0;
     margin: auto;
+    z-index: 2;
     display: none;
 }
 
