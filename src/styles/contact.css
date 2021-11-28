@@ -340,6 +340,19 @@ section .areaForm .image-Form img {
     height: auto;
 }
 
+.modal {
+    width: 35vw;
+    height: 30vh;
+    border: 1px solid red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+}
+
 @media(max-width: 1130px){
 
     section .description p {
