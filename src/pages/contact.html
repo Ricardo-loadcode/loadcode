@@ -12,6 +12,7 @@
     <script src="../scripts/globalScript.js"></script>
     <script src="../scripts/sendEmail.js"></script>
     <script src="../email/email.min.js"></script>
+    <script src="../scripts/contact.js"></script>
     <title>Atendimento - LoadCode</title>
 </head>
 <body>
@@ -129,7 +130,7 @@
                         <h3>Siga-nos</h3>
                         <ul>
                             <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Linkedin</a></li>
+                            <li><a href="https://www.linkedin.com/company/loadcode/">Linkedin</a></li>
                         </ul>
                     </div>
                 </div>
@@ -138,12 +139,12 @@
         </footer>
         <div class="overlay"></div>
         <div class="modal">
-            <span>Sua mensagem foi enviada com sucesso!</span>
             <div class="logo">
                 <img src="../assets/images/logo-meta.png" alt="logo">
             </div>
-            <div class="btn-modal">
-                <button>ok</button>
+            <span id="msgModal"></span>
+            <div class="area-btn">
+                <button class="btnModal" onclick="viewModal()">ok</button>
             </div>
         </div>
     </main>

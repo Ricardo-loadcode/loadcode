@@ -108,6 +108,7 @@ figure img {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 section.contato {
@@ -354,9 +355,9 @@ section .areaForm .image-Form img {
   display: none;
 }
 .modal {
-    width: 35vw;
+    width: 95%;
     height: 30vh;
-    border: 1px solid red;
+    box-shadow: 6px 6px 2px -3px rgba(89,89,89,0.77);
     position: fixed;
     top: 0;
     right: 0;
@@ -364,8 +365,89 @@ section .areaForm .image-Form img {
     left: 0;
     margin: auto;
     z-index: 2;
+    background: #FFF;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 10px;
     display: none;
 }
+
+
+.modal .logo{
+    width: 200px;
+    height: auto;
+}
+.modal .logo img{
+    width: 100%;
+}
+.modal span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-family: 'Roboto';
+    font-size: 19px;
+}
+
+button.btnModal {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #a782fd;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    border: 2px solid #a782fd;
+    width: 40%;
+    cursor: pointer;
+}
+
+button.btnModal:after{
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+    background: #a782fd;
+    opacity: 0.4;
+    color: #FFF;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    z-index: 1;
+}
+
+button.btnModal:hover {
+    color: #040404;
+    text-shadow: none;
+}
+
+button.btnModal:hover:after {
+    height: 450%;
+}
+
+button.btnModal:active {
+    position: relative;
+    top: 1px;
+}
+
 
 @media(max-width: 1130px){
 
@@ -493,5 +575,14 @@ section .areaForm .image-Form img {
         width: 95%;
         text-align: justify;
         margin: 0 auto;
+    }
+
+    .modal span{
+        font-size: 17px;
+    }
+
+    .btnModal{
+        margin: 7px auto !important;
+        width: 60%;
     }
 }
